@@ -3,7 +3,10 @@
   border-radius: 0px;
 }
 
-.background {
-    background: url(../images/chuck-norris-1.jpg);
-    background-size: cover;
+input {
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
 }
