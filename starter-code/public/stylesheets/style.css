@@ -1,3 +1,9 @@
-h1 {
-  color: green;
+.navbar {
+  margin: 0;
+  border-radius: 0px;
+}
+
+.background {
+    background: url(../images/chuck-norris-1.jpg);
+    background-size: cover;
 }

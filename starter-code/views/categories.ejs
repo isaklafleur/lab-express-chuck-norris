@@ -1,3 +1,10 @@
-  <body>
+<% include ./partials/header %>
     <h1>Categories</h1>
-  </body>
+
+    <!-- <pre><%= JSON.stringify(response, null, 2) %></pre> -->
+    <ul>
+      <% response.forEach(cat => { %>
+      <li><a href="/categories/<%= cat %>"><%= cat %></a></li>
+      <%  }) %>
+    </ul>
+<% include ./partials/footer %>

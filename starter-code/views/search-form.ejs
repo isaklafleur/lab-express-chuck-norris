@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+
+<h1>Search for a Joke</h1>
+<div class="home-heading">
+  <div class="form-wrapper">
+    <form action="/search" class="form-group home-form" method="post">
+      <input placeholder="type the keyword" class="form-control home-input" type="text" name="searchKeyword">
+      <button class="btn btn-primary home-search" type="submit">Search for an Joke</button>
+    </form>
+  </div>
+</div>
+
+<ul>
+  <% if(response !== undefined) { %>
+<% response.items.forEach(joke => { %>
+    <li><%= joke.value %></li>
+  <% }); %>
+  <% } %>
+</ul>
+
+<!-- <pre><%= JSON.stringify(response, null, 2) %></pre> -->
+
+<% include ./partials/footer %>
+
