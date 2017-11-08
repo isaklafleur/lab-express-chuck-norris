@@ -1,10 +1,14 @@
 <% include ./partials/header %>
-    <h1>Categories</h1>
+  <h1>Categories</h1>
 
-    <!-- <pre><%= JSON.stringify(response, null, 2) %></pre> -->
-    <ul>
-      <% response.forEach(cat => { %>
-      <li><a href="/categories/<%= cat %>"><%= cat %></a></li>
+  <!-- <pre><%= JSON.stringify(response, null, 2) %></pre> -->
+  <ul>
+    <% response.forEach(cat => { %>
+      <li>
+        <a href="/categories/<%= cat %>">
+          <%= cat %>
+        </a>
+      </li>
       <%  }) %>
-    </ul>
-<% include ./partials/footer %>
+  </ul>
+  <% include ./partials/footer %>
